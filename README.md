@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Simplilearn Executive Roundtable – RSVP Web App
 
-## Getting Started
+A responsive event landing page with an RSVP form integrated with **Airtable** to collect attendee details. Built using **Next.js (App Router)** and **Bootstrap 5**.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+* Modern responsive landing page UI
+* Executive event information section
+* Speaker highlights
+* Event agenda section
+* RSVP form with validation
+* Airtable integration for storing submissions
+* Submission success & error handling
+* Bootstrap-only styling (no custom CSS framework)
+
+---
+
+## 🛠 Tech Stack
+
+* **Next.js 13+ (App Router)**
+* **React**
+* **Bootstrap 5**
+* **Airtable API**
+* JavaScript / TypeScript
+
+---
+
+## 📁 Project Structure
+
+```
+app/
+ ├─ page.tsx        # Main landing page
+ ├─ layout.tsx      # App layout
+ ├─ globals.css     # Global styles
+public/
+ └─ imgs/           # Images & logo
+submitRSVP.js       # Airtable submission logic
+.env.local          # Environment variables
+```
+
+---
+
+## 🔐 Environment Variables Setup
+
+Create a file named `.env.local` in the root directory:
+
+```
+AIRTABLE_API_KEY=your_personal_access_token
+AIRTABLE_BASE_ID=your_base_id
+AIRTABLE_TABLE_NAME=RSVPs
+```
+
+> ⚠️ Never commit `.env.local` to GitHub.
+
+---
+
+## 📦 Installation
+
+```bash
+git clone <your-repo-url>
+cd simplilearn-assignment
+npm install
+```
+
+---
+
+## ▶️ Run Locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📝 RSVP Form Fields
 
-To learn more about Next.js, take a look at the following resources:
+* Name
+* Email
+* Company
+* Designation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+All submissions are stored securely in Airtable.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧪 Git Workflow
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+git add .
+git commit -m "Your message"
+git push
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📸 Screenshots
+
+<img width="1426" height="945" alt="Screenshot 2026-01-14 020203" src="https://github.com/user-attachments/assets/f850c9ea-b665-4fc5-a9c8-f1abc75ff80b" />
+
+
+---
+
+## 🧑‍💻 Author
+
+**Hritik Singh Pal**
+
+---
+
+## 📄 License
+
+This project is created for the Simplilearn assignment and is intended for educational and evaluation purposes.
+
+---
+
+## 💡 Notes
+
+* Ensure Airtable API key is valid and has write access.
+* Make sure the table name matches exactly.
+* Use Bootstrap utility classes for layout and styling.
+
+---
+
+If you have any questions or need setup help, feel free to reach out 🙂
